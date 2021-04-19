@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: voucher-thirdparty
+  profiles:
+    active: local
