@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "a452c8aa-c4ce-45a7-b97e-e6a32c39b3a3",
+		"name": "Bank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Find Vouchers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "0909492488",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8082/order/voucher",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"order",
+						"voucher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Voucher",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phone\": \"0909492488\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/order/voucher",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"order",
+						"voucher"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
