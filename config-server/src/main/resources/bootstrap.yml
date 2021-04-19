@@ -1,0 +1,23 @@
+#spring:
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/tranducanhtuan/config-repo.git
+#          searchPaths: '{application}/{profile}'
+#          clone-on-start: true
+#          default-label: master
+
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: 'file:///D:/Github-tranducanhtuan-bank/config-repo/{application}/{profile}'
