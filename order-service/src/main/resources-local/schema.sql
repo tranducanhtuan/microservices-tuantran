@@ -1,0 +1,8 @@
+-- DROP TABLE IF EXISTS voucher;
+
+CREATE TABLE IF NOT EXISTS voucher (
+  voucher_id INT(11) AUTO_INCREMENT PRIMARY KEY,
+  phone VARCHAR(11) NOT NULL,
+  code VARCHAR(36) NOT NULL,
+  created_at DATETIME NOT NULL
+);
