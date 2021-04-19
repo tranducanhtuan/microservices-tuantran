@@ -1,0 +1,49 @@
+server:
+  port: 8082
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
+
+spring:
+  zipkin:
+    base-url: http://localhost:8081/
+
+zuul:
+  host:
+    connect-timeout-millis: 5000000
+    socket-timeout-millis: 5000000
+  ignored-services: '*'
+  routes:
+#    auth-service:
+    ##      path: /auth/**
+    ##      serviceId: auth-service
+    ##      sensitiveHeaders:
+    order-service:
+      path: /order/**
+      serviceId: order-service
+      sensitiveHeaders:
+
+ribbon:
+  eureka:
+    enabled: true
+  ReadTimeout: 360000
+  ConnectTimeout: 60000
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 180000
+
+jwt:
+  secretKey: myJWTSecretKey

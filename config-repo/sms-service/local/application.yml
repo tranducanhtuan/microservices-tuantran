@@ -1,0 +1,29 @@
+server:
+  port: 8084
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
+
+spring:
+  zipkin:
+    base-url: http://localhost:8081/
+  cloud:
+    stream:
+      default:
+        contentType: application/json
+      kafka:
+        binder:
+          brokers: localhost:9092
+          zkNodes: localhost:2181
+      bindings:
+        smsInput:
+          destination: sms
+          group: sms
