@@ -44,14 +44,18 @@
 
 ## 2. System Architecture 
 ### 2.1. Backend
-![service_architect-Backend](https://user-images.githubusercontent.com/45473913/115580471-4d24af80-a2f1-11eb-8ac6-ba879959c5b9.png)
+![service_architect-Backend](https://user-images.githubusercontent.com/45473913/115650732-04eaa900-a354-11eb-8d41-dd3872fa86ec.png)
 
 ### 2.2. Frontend  
 ![service_architect-Frontend](https://user-images.githubusercontent.com/45473913/115580498-56158100-a2f1-11eb-979e-98d5beb70cfc.png)
 
 ### 2.3. Infrastructures
-
-
+- **_Backend:_**  
+  ![service_architect-AWS backend infrastructure](https://user-images.githubusercontent.com/45473913/115653856-28185700-a35a-11eb-8be4-60706d37afb1.png)
+  
+- **_Frontend:_**  
+![service_architect-AWS Frontend Infrastructure](https://user-images.githubusercontent.com/45473913/115653872-2fd7fb80-a35a-11eb-9125-be36eb24379e.png)
+  
 ### 2.4. In-Service layering  
   ![image](https://user-images.githubusercontent.com/45473913/115496389-b5dd3f00-a293-11eb-9826-4616dfe9c115.png)  
   ![image](https://user-images.githubusercontent.com/45473913/115495928-d5c03300-a292-11eb-8ae7-673ee26055c3.png)  
