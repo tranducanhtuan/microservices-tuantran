@@ -1,6 +1,7 @@
 # microservices-tuantran
 
 ## Table of contents
+- [Requirement](#requirement)
 - [1. Techstack](#1-techstack)
   * [1.1. DB](#11-db)
   * [1.2. Backend](#12-backend)
@@ -29,6 +30,8 @@
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
+## Requirement
+- See [Requirement.md](https://github.com/tranducanhtuan/microservices-tuantran/blob/main/Requirement.md)
 ## 1. Techstack
 ### 1.1. DB
 - Current: H2 DB (but saved in file so it's still keep your data even service is restarted): help fast build up project & testing.
